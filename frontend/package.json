@@ -1,0 +1,36 @@
+{
+    "name": "newsfront",
+    "version": "1.0.0",
+    "description": "News Verification Frontend",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "dependencies": {
+        "axios": "^1.8.4",
+        "dompurify": "^3.2.4",
+        "framer-motion": "^12.5.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-icons": "^5.5.0",
+        "react-router-dom": "^6.30.0",
+        "react-scripts": "^5.0.1",
+        "recharts": "^2.15.1",
+        "web-vitals": "^4.2.4"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
