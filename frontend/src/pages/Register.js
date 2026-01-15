@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import "../styles/global.css";
+import "../styles/Register.css";
 
 const Register = ({ onRegister }) => {
   const [formData, setFormData] = useState({
@@ -12,7 +12,7 @@ const Register = ({ onRegister }) => {
     password: "",
     confirmPassword: "",
     phoneNumber: "",
-    gender: "prefer-not-to-say",
+    gender: "",
     termsAccepted: false,
   });
   const [error, setError] = useState("");
@@ -133,12 +133,15 @@ const Register = ({ onRegister }) => {
           required
         />
         <select name="gender" value={formData.gender} onChange={handleChange}>
+          <option value="" disabled>
+            Select Gender
+          </option>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Other</option>
           <option value="prefer-not-to-say">Prefer not to say</option>
         </select>
-        <label>
+        <label className="checkbox-container">
           <input
             type="checkbox"
             name="termsAccepted"

@@ -1,0 +1,116 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.register-container form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 9vh;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 83vh;
+}
+
+.register-container form::-webkit-scrollbar {
+  display: none;
+}
+
+.register-container input,
+.register-container select,
+.register-container button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 0;
+}
+
+.register-container select {
+  appearance: none;
+}
+
+.register-container input:focus,
+.register-container select:focus,
+.register-container textarea:focus {
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.register-container button {
+  background: #ff0000;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.register-container button:hover {
+  background: #b30000;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 12px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+
+/* Responsive CSS for smaller screens */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-container form {
+    padding: 1rem;
+    max-height: 90vh; /* Adjust max height for smaller screens */
+    margin-top: 5vh; /* Reduce top margin on smaller screens */
+  }
+
+  .register-container input,
+  .register-container select,
+  .register-container button {
+    font-size: 16px; /* Increase font size for better readability on mobile */
+  }
+
+  .checkbox-container {
+    flex-direction: row; /* Ensure checkbox and text stay on one line if space allows */
+    flex-wrap: wrap; /* Wrap if not enough space */
+    font-size: 14px;
+  }
+}
+
+/* Responsive CSS for very small screens */
+@media (max-width: 480px) {
+  .register-container form {
+    margin-top: 2vh; /* Further reduce top margin */
+  }
+}
