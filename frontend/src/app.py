@@ -16,8 +16,6 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max upload size
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Google Custom Search API configuration
-API_KEY = "AIzaSyB4vIkEsywN13MZ3Cf2bwvZ6sD2Wkx_SF4"
-SEARCH_ENGINE_ID = "e601386b9793f4353"
 URL = "https://www.googleapis.com/customsearch/v1"
 
 # Gemini API configuration
